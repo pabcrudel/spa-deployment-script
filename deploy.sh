@@ -7,6 +7,7 @@
 # GitHub: https://github.com/pabcrudel
 # --------------------------------------------------------------------
 
+# A shell option that makes the script exit if any command returns a non-zero exit code.
 set -e
 
 # Save the latest commit hash as a string
