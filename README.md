@@ -4,7 +4,7 @@ This script automates the deployment of SPA projects on GitHub Pages. It builds 
 
 ## Usage
 
-1. Download the script from the [GitHub repository](https://github.com/pabcrudel/spa-project-deployment-script) and save it in the root directory of your SPA project.
+1. Download the script from the [GitHub repository](https://github.com/pabcrudel/spa-project-deployment-script/blob/main/deploy.sh) and save it in the root directory of your SPA project.
 
 2. Make the script executable by running the following command:
 
