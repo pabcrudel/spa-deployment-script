@@ -19,6 +19,13 @@ chmod +x deploy.sh
 ```
 
 ## Script Details
+
+## Exit if any command fails
+```sh
+# A shell option that makes the script exit if any command returns a non-zero exit code.
+set -e
+```
+
 ### Build
 The script builds the project using the `npm run build` command.
 
