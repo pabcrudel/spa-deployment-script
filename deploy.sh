@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Script to automate the deploy of vue projects on github pages
+# Script to automate the deploy of SPA projects on github pages
 #
 # --------------------------------------------------------------------
 # Author: Pablo Cru
@@ -9,15 +9,15 @@
 
 set -e
 
-# Build
-npm run build
-
 # Save the latest commit hash as a string
 git_log=$(git log)
 commit_hash=$(echo $git_log | awk '{print $2}')
 
-# Get GitHub Repository URL
+# Get current GitHub Repository URL
 repo_url=$(git remote show origin | grep Push | awk '{print $3}')
+
+# Build
+npm run build
 
 # Navigate into the build output directory
 cd dist
