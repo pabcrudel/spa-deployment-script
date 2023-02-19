@@ -6,19 +6,13 @@ This script automates the deployment of SPA projects on GitHub Pages. It builds 
 
 1. Download the script from the [GitHub repository](https://github.com/pabcrudel/spa-project-deployment-script) and save it in the root directory of your SPA project.
 
-2. Open the script in a text editor and replace the `repo_url` variable with the URL of your GitHub repository.
-
-```sh
-repo_url="https://github.com/USERNAME/REPOSITORY.git"
-```
-
-3. Make the script executable by running the following command:
+2. Make the script executable by running the following command:
 
 ```sh
 chmod +x deploy.sh
 ```
 
-4. Run the script by typing the following command in the terminal:
+3. Run the script by typing the following command in the terminal:
 
 ```sh
 ./deploy.sh
@@ -42,7 +36,7 @@ git commit --allow-empty -m "Deploy (commit: $commit_hash)"
 The script pushes the new commit to the `gh-pages` branch of your repository.
 
 ```sh
-# Get GitHub Repository URL
+# Get your current GitHub Repository URL
 repo_url=$(git remote show origin | grep Push | awk '{print $3}')
 
 # Navigate into the build output directory
