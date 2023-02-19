@@ -20,7 +20,7 @@ chmod +x deploy.sh
 
 ## Script Details
 
-## Exit if any command fails
+### Exit if any command fails
 ```sh
 # A shell option that makes the script exit if any command returns a non-zero exit code.
 set -e
