@@ -23,8 +23,7 @@ chmod +x deploy.sh
 The script builds the project using the `npm run build` command.
 
 ### Create New Commit
-The script creates a new commit Including if there are no changes to add. It's like this because if a previous commit has been made and you want to publish those changes, Git doesn't allow making a new commit upon resetting the repository in the dist folder.
-The latest commit hash is saved as a string and used in the commit message.
+The script creates a new commit Including if there are no changes to add. It's like this because if a previous commit has been made and you want to publish those changes, Git doesn't allow making a new commit upon resetting the repository in the dist folder. The latest commit hash is saved as a string and used in the commit message.
 
 ```sh
 # Save the output of the `git log` command in the `git_log` variable.
