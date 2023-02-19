@@ -33,8 +33,13 @@ The script creates a new commit Including if there are no changes to add. It's l
 The latest commit hash is saved as a string and used in the commit message.
 
 ```sh
+# Save the output of the `git log` command in the `git_log` variable.
 git_log=$(git log)
+
+# Use the `awk` command to print the second word of the output. The second word is the commit hash.
 commit_hash=$(echo $git_log | awk '{print $2}')
+
+# Create a new commit with the message "Deploy (commit: )"
 git commit --allow-empty -m "Deploy (commit: $commit_hash)"
 ```
 
