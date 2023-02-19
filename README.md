@@ -50,9 +50,6 @@ The script pushes the new commit to the `gh-pages` branch of your repository.
 # Get your current GitHub Repository URL
 repo_url=$(git remote show origin | grep Push | awk '{print $3}')
 
-# Navigate into the build output directory
-cd dist
-
 # Get current branch
 branch=$(git rev-parse --abbrev-ref $(git symbolic-ref HEAD))
 
